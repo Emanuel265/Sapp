@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from mysite import remote
+from mysite.devices import remote, light, radio, bed
 
 urlpatterns = [
     path("remote/<str:command>", remote.index),
+    path("light/<str:command>", light.index),
+    path("radio/<str:command>", radio.index),
+    path("bed/<str:command>", bed.index),
     path("admin/", admin.site.urls),
 ]

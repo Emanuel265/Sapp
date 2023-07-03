@@ -4,7 +4,7 @@ from django.http import HttpResponse
 def index(request, command: str):
     match command:
         case "ON":
-            print("Command ON")
+            print("Light ON")
         case "OFF":
-            print("Command OFF")
+            print("Light OFF")
     return HttpResponse(request)
