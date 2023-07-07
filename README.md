@@ -1,6 +1,9 @@
 # SappServer
 
-
+Start server: py manage.py runserver 
+```
+10.0.0.6:8000
+```
 
 ## Getting started
 

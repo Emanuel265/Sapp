@@ -3,8 +3,8 @@ from django.http import HttpResponse
 
 def index(request, command: str):
     match command:
-        case "ON":
+        case "Lauter":
             print("Radio ON")
-        case "OFF":
+        case "Leiser":
             print("Radio OFF")
     return HttpResponse(request)
